@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="#FFEB3B"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".CallActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="monospace"
+        android:text="Hey User"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Lets start a call"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/editID"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_corner"
+        android:hint="UserId"
+        android:paddingHorizontal="12dp" />
+
+    </RelativeLayout>
+
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:layout_width="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/voiceCallBtn"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="48dp"/>
+    <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton
+        android:layout_width="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/videoCallBtn"
+        android:layout_marginHorizontal="10dp"
+        android:layout_height="48dp"/>
+</LinearLayout>
