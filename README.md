@@ -2,5 +2,6 @@
 **1.Clone the repository to your local machine.**
 
 ```
-git clone https://github.com/AgoraIO-Usecase/AgoraMeeting.git
+implementation('com.github.AgoraIO-Community.VideoUIKit-Android:final-debug:4.0.1')
+
 ```
